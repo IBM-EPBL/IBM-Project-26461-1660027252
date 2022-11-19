@@ -1,0 +1,24 @@
+<html lang="en" dir="ltr"><head>
+    <link rel="stylesheet" href="/static/css/dashboard.css" />
+    <link rel="stylesheet" href="/static/css/up.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+
+
+  <nav>
+    <ul class="menu">
+      <li><a href="dashboard" >HOME</a></li>
+      <li><a href="up" class="active">UPLOAD</a></li>
+      <li><a href="display">HISTORY</a></li>
+      <li><a href="login">LOGOUT</a></li>
+      <li class="slider"></li>
+    </ul>
+    </nav>
+   <body>
+      <form class="upl" action = "{{url_for('uploader')}}" method = "POST"
+         enctype = "multipart/form-data">
+         <input type = "file" style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: larger;" name = "file" />
+         <input type = "submit"style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: larger;"/>
+      </form>
+   </body>
+</html>
