@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/static/css/forgotpw.css" />
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+    <div class="mssg">
+        {{msg}}
+    </div>
+        <div class="center">
+            <input checked type="checkbox" id="show" />
+            <label for="show" class="show-btn">Nutrozilla Welcomes you:)</label>
+            <div class="container">
+                <label
+                    for="show"
+                    class="close-btn fas fa-times"
+                    title="close"
+                ></label>
+                <div class="text">Forgot Password?</div>
+                <form action="{{url_for('checkpass')}}" method="POST">
+                    <div class="data">
+
+                        <input class="email" type="text" placeholder="Email" required name="email"/>
+                    </div>
+                    <div class="data">
+
+                        <input class="pw" type="password" placeholder="New Password" required name="password"/>
+                    </div>
+<!--                    <div class="data">-->
+<!--                        <label>Confirm Password</label>-->
+<!--                        <input type="password" required />-->
+<!--                    </div>-->
+                    <div class="btn">
+                        <div class="inner"></div>
+                        <button type="submit">Reset</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

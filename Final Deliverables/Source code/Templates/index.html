@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+<!--<div>-->
+
+<!--    <a href="login"><img src="/static/css/images/images.jpeg" alt="" class="zombie"/></a>-->
+
+<!--</div>-->
+
+  <div class="box">
+    <center>
+      <br>
+      <br>
+<!--      <h1>NUTRITION ASSISTANT APPLICATION</h1>-->
+        <div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3 class="animate-charcter"> NUTRITION ASSISTANT APPLICATION</h3>
+    </div>
+  </div>
+</div>
+        <br>
+        <h3>"See nutrients, calories, vitamins and minerals by just taking pictures of your meals!!!"</h3>
+      <br><br>
+
+        <a href="login">
+            <button class="button-85" role="button">Login</button>
+        </a>
+         <br><br>
+        <a href="signup">
+            <button class="button-85" role="button">Signup</button>
+        </a>
+      <br><br>
+
+     </center>
+  </div>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "0c20fc86-c024-421d-af5f-ffa276190862", // The ID of this integration.
+    region: "jp-tok", // The region your integration is hosted in.
+    serviceInstanceID: "83cc55ca-5fdb-4ffd-b11a-cebe2fab5f4d", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
